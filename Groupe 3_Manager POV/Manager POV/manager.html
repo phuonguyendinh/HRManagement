@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Liste des demandes de congés</title>
+<link rel="stylesheet" href="styles4.css">
+<header><center><img src="logo.png" alt="Logo de l'entreprise" class="logo"</center></header>
+</head>
+
+<body>
+  <div class="container">
+      <!-- Navigation -->
+      <div>
+          <nav>
+              <ul>
+                  <li><a href="index.html">Accueil</a></li>
+                  <li><a href="profil.html">Mon profil</a></li>
+                  <li><a href="salaire.html">Mes fiches de paie</a></li>
+                  <li><a href="demande.html">Mes demandes de congés</a></li>
+                  <li><a href="manager.html">Liste des demandes de congés </a></li>
+              </ul>
+          </nav>      
+      </div>
+
+      <center>
+      <h1>Liste des demandes de congés</h1>
+      </center>
+
+    <div class="container">
+      <table>
+      <tr>
+        <th><b>Nom</b></th>
+        <th><b>Prénom</b></th>
+        <th><b>Numéro d'employé</b></th>
+        <th><b>Date de début du congé</b></th>
+        <th><b>Date de fin du congé</b></th>
+        <th><b>Raison du congé</b></th>
+        <th><b>Accepter/Refuser le congé</b></th>
+      </tr>
+      <tr>
+        <td>Porter</td>
+        <td>Jack</td>
+        <td>FT123</td>
+        <td>4 mars 2024</td>
+        <td>18 mars 2024</td>
+        <td>Vacances</td>
+        <td><form action="/soumission_manager.php">
+          <input type="text" list="reponse" />
+          <datalist id="reponse">
+            <option>Accepter</option>
+            <option>Refuser</option>
+          </datalist>
+          <input type="submit" value="Soumettre">
+        </form></td>
+      </tr>
+      <tr>
+        <td>Doe</td>
+        <td>Jane</td>
+        <td>PC890</td>
+        <td>2 mai 2024</td>
+        <td>30 mai 2024</td>
+        <td>Études</td>
+        <td><form action="/soumission_manager.php">
+          <input type="text" list="reponse" />
+          <datalist id="reponse">
+            <option>Accepter</option>
+            <option>Refuser</option>
+          </datalist>
+          <input type="submit" value="Soumettre">
+        </form></td>
+      </tr>
+    </table>
+    </center> 
+  </div>  
+
+    <footer>
+        <p>Besoin d'une assistance technique ?<br>
+            Veuillez contacter le Support TI via :
+            <br>Courriel : supportTI@hrnow.com
+            <br>Téléphone : +1 (123) 456-6789
+        </p>
+      </footer> 
+      
+  </body>
+</html>
+

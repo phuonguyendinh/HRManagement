@@ -1,0 +1,212 @@
+/* Styles de base */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* En-tête général pour toutes les pages */
+header {
+  background-color:#509ef3;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Logo de l'entreprise */
+header {
+  width: 100%;
+  color:#509ef3;
+  text-align: center;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+  
+  .logo {
+    width: 50%;
+    height: auto;
+    max-height: 140px; 
+    display: block; 
+  }
+  
+/* Navigation générale */
+nav {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav li:last-child {
+  margin-right: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+}
+
+nav a:hover {
+  background-color: #0056b3;
+  border-radius: 4px;
+}
+
+/* Conteneurs principaux */
+.container, .main {
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles spécifiques à la page de profil de l'employé */
+.container, .profile-header, .profile-details, .current-position, .joining-details {
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+  }
+  
+  .profile-header, .profile-details, .current-position, .joining-details {
+    background: #f9f9f9;
+    margin-bottom: 20px;
+    border-left: 4px solid #007bff;
+  }
+  
+  .profile-header img {
+    float: left;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  
+  .profile-header h2, .profile-details h3, .current-position h3, .joining-details h3 {
+    margin-top: 0;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .profile-header p, .profile-details p, .current-position p, .joining-details p {
+    margin: 0 0 10px 0;
+    color: #666;
+  }
+
+/* Tableaux et formulaires */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color:#f8f8f8;
+  color:black;
+}
+
+td {
+  background-color: #f8f8f8;
+}
+
+/* Boutons de formulaire */
+input[type="submit"], button {
+  background-color:#007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover, button:hover {
+  background-color: #4cae4c;
+}
+
+/* Pied de page général pour toutes les pages */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Responsive design pour la navigation */
+@media screen and (max-width: 600px) {
+  nav ul {
+    display: block;
+  }
+
+  nav li {
+    display: block;
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 768px) {
+    .logo {
+      height: auto; 
+    }
+  }
+  
+
+  /* Styles supplémentaires pour la page d'accueil */
+  /* Colonnes pour les différentes sections des nouvelles */
+  .accueil {
+    flex: 1;
+    min-width: 300px; 
+    background-color: #f8f8f8;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; 
+  }
+  
+  /* Titres pour les sections des nouvelles */
+  .accueil h3 {
+    color: #007bff;
+    margin-bottom: 10px;
+  }
+  
+  /* Dates des nouvelles */
+  .accueil p:last-child {
+    font-style: italic;
+    font-size: 0.9em;
+    color: #666;
+  }
+  
+  /* Styles pour les images dans les bulletins d'information */
+  .accueil img {
+    width: 45%; 
+    height: auto;
+    margin-bottom: 15px; 
+  }
+  
+  /* Amélioration de la navigation */
+  nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  nav a {
+    margin: 5px; 
+  }
+  
